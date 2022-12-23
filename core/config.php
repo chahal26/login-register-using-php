@@ -9,4 +9,7 @@
     if(!$connection){
         die('Failed to make SQL connection: '. mysqli_connect_error());
     }
+
+    define('BASE_URL', 'http://localhost:8888/classes/login-register-using-php');
+    define('BASE_PATH', '/Applications/MAMP/htdocs/classes/login-register-using-php');
 ?>

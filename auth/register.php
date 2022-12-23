@@ -1,10 +1,10 @@
-<?php include('../layouts/header.php') ?>
+<?php require BASE_PATH.'/layouts/header.php' ?>
 <?php
     if (isset($_POST) && !empty($_POST)) {        
         $name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         $errors = [];
 
@@ -38,7 +38,7 @@
         }
     }
 ?>
-    <h2>Register Page</h2><hr/>
+    <h2 class="mt-4">Register Page</h2><hr/>
 
     <div class="form">
         <form action="" method="post">
