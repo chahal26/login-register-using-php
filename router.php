@@ -12,6 +12,9 @@
         case 'profile' : 
             require 'views/profile.php';
             break;
+        case 'logout' : 
+            require 'views/auth/logout.php';
+            break;
         default :
             http_response_code(404);
             require 'views/errors/404.php';

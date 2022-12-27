@@ -23,7 +23,7 @@
                                 <a class="nav-link" href="<?=BASE_URL?>/profile">My Profile</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Logout</a>
+                                <a class="nav-link" href="<?=BASE_URL?>/logout">Logout</a>
                             </li>
                         <?php }else{ ?>
                             <li class="nav-item">
