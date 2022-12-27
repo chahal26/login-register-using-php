@@ -1,4 +1,3 @@
-<?php require BASE_PATH.'/layouts/header.php' ?>
 <?php
     if (isset($_POST) && !empty($_POST)) {        
         $name = $_POST['name'];
@@ -63,4 +62,3 @@
             <button type="submit" class="btn btn-success">Submit</button>
         </form>
     </div>
-<?php include('../layouts/footer.php') ?>

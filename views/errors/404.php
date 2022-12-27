@@ -1,0 +1,1 @@
+<h2>oops, you missed your path. <a href="<?=BASE_URL?>">Click Here</a> to go back to Home Page</h2>

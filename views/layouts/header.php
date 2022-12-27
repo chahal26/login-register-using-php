@@ -1,4 +1,3 @@
-<?php require BASE_PATH.'/core/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +19,10 @@
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=BASE_URL?>/auth/register.php">Register</a>
+                            <a class="nav-link" href="<?=BASE_URL?>/register">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=BASE_URL?>/auth/login.php">Login</a>
+                            <a class="nav-link" href="<?=BASE_URL?>/login">Login</a>
                         </li>
                     </ul>
                 </div>
