@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'core/config.php';
 
 $request = $_SERVER['REQUEST_URI'];
