@@ -18,12 +18,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=BASE_URL?>/register">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=BASE_URL?>/login">Login</a>
-                        </li>
+                        <?php if(isset($_SESSION['user_id'])){ ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?=BASE_URL?>/profile">My Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                            </li>
+                        <?php }else{ ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?=BASE_URL?>/register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?=BASE_URL?>/login">Login</a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>

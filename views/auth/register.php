@@ -1,4 +1,8 @@
 <?php
+    if(isset($_SESSION['user_id'])){
+        header ("location: ".BASE_URL."/profile");
+    }
+
     if (isset($_POST) && !empty($_POST)) {        
         $name = $_POST['name'];
         $email = $_POST['email'];
